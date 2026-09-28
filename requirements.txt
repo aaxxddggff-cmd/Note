@@ -1,0 +1,2 @@
+pywebpush>=1.14
+tzdata

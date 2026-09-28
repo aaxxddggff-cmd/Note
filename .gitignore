@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+data.db
+uploads/
+backups/
+vapid_private.pem
+.env
+Note/

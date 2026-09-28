@@ -1,0 +1,9 @@
+{
+  "name": "สมุดสิ่งสำคัญ",
+  "short_name": "สิ่งสำคัญ",
+  "start_url": "./#/today",
+  "display": "standalone",
+  "background_color": "#F7F7F8",
+  "theme_color": "#2563EB",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

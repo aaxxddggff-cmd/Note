@@ -1,0 +1,37 @@
+{
+  // Terminal → Run Task…  (Cmd+Shift+B runs the default one)
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "สมุดสิ่งสำคัญ: รันเว็บแอป",
+      "type": "shell",
+      "command": "python3 server.py",
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "panel": "dedicated", "reveal": "always" }
+    },
+    {
+      "label": "สมุดสิ่งสำคัญ: เปิดในเบราว์เซอร์",
+      "type": "shell",
+      "command": "open http://localhost:8001",
+      "problemMatcher": []
+    },
+    {
+      "label": "สมุดสิ่งสำคัญ: รันเทสทั้งหมด",
+      "type": "shell",
+      "command": "python3 -m unittest discover -s tests -v",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "panel": "dedicated", "reveal": "always" }
+    },
+    {
+      "label": "สมุดสิ่งสำคัญ: หยุดเซิร์ฟเวอร์ที่ค้างอยู่ (พอร์ต 8001)",
+      "type": "shell",
+      "command": "lsof -ti tcp:8001 | xargs kill 2>/dev/null; echo stopped",
+      "problemMatcher": []
+    }
+  ]
+}

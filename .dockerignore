@@ -1,0 +1,10 @@
+.git
+.vscode
+.env
+.DS_Store
+__pycache__
+data.db
+uploads
+backups
+vapid_private.pem
+tests
